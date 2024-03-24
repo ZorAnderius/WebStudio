@@ -169,5 +169,32 @@
 
 
     /* #endregion Footer */
+
+
+    /* -----------Portfolio------------ */
+    /* #region main section */
+    .main-projects {
+        padding: var(--pt-footer) 0 var(--pb-section);
+    }
+
+    .projects-filter-list {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: var(--gap);
+        margin-bottom: 64px;
+    }
+
+    .projects-list {
+        --items: 3;
+        gap: 48px 24px;
+    }
+
+    .projects-list-item{
+        --items: 3;
+        --gap: 24px;
+    }
+    /* #endregion main section */
 }
 
