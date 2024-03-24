@@ -1,0 +1,173 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+
+    .mini-container {
+        max-width: 1158px;
+    }
+
+    body{
+    font-weight: 400;
+}
+
+    .section {
+        padding-top: var(--pt-section);
+    }
+
+    .card-set {
+        gap: var(--gap);
+    }
+
+    .card-set-item {
+        --items: 4;
+        --gap: 24px;
+        flex-basis: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+    }
+    
+    /* #region Header */
+    .address-list {
+        padding: 0;
+        flex-direction: row;
+        gap: var(--gap-nav);
+    }
+
+    .address-item-link{
+        padding: 24px 0;
+        font-size: 16px;
+        line-height:1.5;
+    }
+    /* #endregion Header */
+
+    /* #region Hero */
+    .hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), url(../images/hero/people-in-office-desk-1x.jpg);
+        max-width: 1440px;
+        padding: 188px 0;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        .hero {
+            background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), url(../images/hero/people-office-desk-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        margin: 0 auto 48px auto;
+    }
+    /* #endregion Hero */
+
+    /* #region Features */
+    .features{
+        padding-bottom: 0;
+    }
+
+    .feater-icon-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 112px;
+
+        border-radius: 4px;
+        background-color: var(--back-footer-color);
+        margin-bottom: var(--mb-desc);
+    }
+
+    .features-item-title.title,
+    .team-item-title,
+    .projects-item-title {
+    font-weight: var(--title-hero-weight);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+    /* #endregion Features */
+
+    /* #region Products */
+    .products {
+        display: block;
+        padding-bottom: var(--pb-section);
+    }
+
+    .products-title {
+        margin-bottom: var(--mb-title);
+    }
+
+    .products-list {
+        --items: 3;
+        gap: var(--gap)
+    }
+
+    .products-list-item{
+        --gap: var(--gap)
+    }
+    /* #endregion Products */
+
+    /* #region Team */
+    .team .container{
+        padding: 0 15px;
+    }
+
+    .team-list-item {
+        --items: 4;
+    }
+    /* #endregion Team */
+
+    /* #region Clients */
+
+    .clients--list {
+        gap: var(--gap);
+    }
+    .clients-item {
+        flex-basis: calc((100% - 5 * var(--gap)) / 6);
+    }
+
+    /* #endregion Clients */
+
+    /* #region Footer */
+    .footer-studio,
+    .footer-portfolio {
+        width: 100%;
+        padding-top: var(--pt-footer);
+        padding-bottom: var(--pb-footer);
+    }
+
+    .footer-studio .container,
+    .footer-portfolio .container {
+        gap:0;
+    }
+
+    .footer-txt-wrap {
+        margin-right: 120px;
+    }
+
+    .footer-soc-wrap {
+        margin-right: 80px;
+    }
+
+    .subscribe-footer{
+        width: 453px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+    }
+
+
+    /* #endregion Footer */
+}
+

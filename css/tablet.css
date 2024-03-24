@@ -1,0 +1,191 @@
+@media screen and (min-width: 768px) {
+    .container {
+    max-width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+    }
+
+    .mini-container{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 552px;
+    }
+
+    .card-set {
+        gap: 72px 16px;
+    }
+
+    .card-set-item {
+        --items: 2;
+        --gap: 16px;
+        flex-basis: calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+    }
+
+    /* #region Header */
+
+    .mob-menu-btn {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: var(--gap-nav);
+    }
+
+    .nav-item-link {
+        display: block;
+        padding: 24px 0;
+        color: inherit;
+    }
+
+    .nav-item-link {
+        font-weight: var(--title-hero-weight);
+        transition-property: color;
+        transition-duration: var(--time-duration);
+        transition-timing-function: var(--timing-function);
+    }
+
+    .nav-item-link.current {
+        position: relative;
+        color: var(--accent-color);
+    }
+
+    .nav-item-link.current::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        left: 0;
+        bottom: -1px;
+        background-color: currentColor;
+    }
+
+    .nav-item-link:hover,
+    .nav-item-link:focus {
+        color: var(--accent-color);
+    }
+
+    .header-studio-address {
+        display: block;
+    }
+
+    .address-list {
+        padding: 16px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* .adress-list-item {} */
+
+    .address-item-link {
+        display: block;
+        color: var(--text-color);
+        font-size: 12px;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: 0.48px; 
+    }
+
+    .address-item-link:hover,
+    .address-item-link:focus {
+        color: var(--accent-color);
+    }
+
+    /* #endregion Header */
+
+    /* #region Hero */
+    .hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ), url(../images/hero/people-in-office-tab-1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+            ), url(../images/hero/people-in-office-tab-2x.jpg);
+        }
+    }
+    /* #endregion Hero */
+
+    /* #region Features */
+    .features-item-title,
+    .projects-item-title {
+        text-align: start;
+    }
+    /* #endregion Features */
+
+    /* #region Team */
+    .team .container{
+        padding: 0 16px;
+    }
+
+    .team-list{
+        column-gap: 24px;
+    }
+
+    .team-list-item {
+        --items: 4;
+        --gap: 24px;
+    }
+
+    .team-item-title {
+        text-align: center;
+    }
+    /* #endregion Team */
+
+    /* #region Clients */
+
+    .clients--list {
+        gap: var(--mob-gap) var(--gap);
+    }
+    .clients-item {
+        flex-basis: calc((100% - 2 * var(--gap)) / 3);
+    }
+    /* #endregion Clients */
+
+    /* #region Footer */
+    .footer-studio .container,
+    .footer-portfolio .container {
+        flex-direction: row;
+        gap: var(--gap);
+        row-gap: var(--mob-gap);
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-txt-wrap {
+        margin-bottom: 0;
+    }
+
+    .footer-studio-logo,
+    .footer-portfolio-logo {
+        justify-content:flex-start;
+    }
+
+    .soc-desc {
+        text-align: start;
+    }
+
+    .footer-subscribe-form{
+        flex-direction: row;
+        gap: var(--gap);
+    }
+
+    .footer-email-input{
+        min-width: 264px;
+    }
+
+    .subscribe-btn {
+        margin: 0;
+    }
+    /* #endregion Footer */
+}
